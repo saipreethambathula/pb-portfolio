@@ -30,15 +30,14 @@ export default function About() {
           </div>
           <div className="text-container">
             <p>
-              I’m Sai Preetham, a Frontend Developer focused on creating clean,
-              responsive, and intuitive web applications. I specialize in React,
-              Next.js, JavaScript, HTML, and CSS to build fast and user-friendly
-              interfaces. I previously worked as a Frontend Developer Intern at
-              Aagama, contributing to a real estate property management
-              application built with Next.js. I enjoy problem-solving, improving
-              UI/UX, and continuously learning new technologies. My goal is to
-              grow into a full-stack developer and build impactful digital
-              products.
+              I’m Sai Preetham, a Frontend Developer who builds clean,
+              responsive, and user-friendly web interfaces. I work with React,
+              Next.js, JavaScript, HTML, and CSS to create fast, modern
+              applications. I previously interned at Aagama, contributing to a
+              Next.js-based real estate property management platform. I enjoy
+              solving UI/UX challenges and constantly improving my skills. My
+              long-term goal is to become a full-stack developer and build
+              impactful digital products.
             </p>
           </div>
         </div>

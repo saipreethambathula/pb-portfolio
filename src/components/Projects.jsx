@@ -5,6 +5,15 @@ import project3 from "../assets/project-3.png";
 
 const projects = [
   {
+    title: "Jobby App",
+    img: project2,
+    description:
+      "Developed a responsive job portal with reusable React components, integrated real-time job data via REST APIs, and optimized UI with Tailwind CSS.",
+    technologies: "React, Material UI, Express",
+    github: "https://github.com/saipreethambathula/jobby-app",
+    demo: "https://pb-jobby-app.vercel.app/login",
+  },
+  {
     title: "Memory Card Game",
     img: project1,
     description:
@@ -12,14 +21,6 @@ const projects = [
     technologies: "HTML, CSS, JavaScript",
     github: "https://github.com/saipreethambathula/memory-game",
     demo: "https://pb-memory-game.vercel.app/",
-  },
-  {
-    title: "Project Two",
-    img: project2,
-    description: "Small description about project two",
-    technologies: "React, Material UI, Express",
-    github: "https://github.com/",
-    demo: "https://github.com/",
   },
   {
     title: "Project Three",
@@ -81,56 +82,61 @@ export default function Projects() {
     <section id="projects" className="project-to-section">
       <p className="section__text__p1">Browse My Recent</p>
       <h1 className="title">Projects</h1>
-
-      <div
-        className="project-to-wrapper"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <button
-          className="project-to-scroll-btn project-to-left"
-          onClick={scrollLeft}
-          aria-label="Scroll Left"
+      <div className="center-div">
+        <div
+          className="project-to-wrapper"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
         >
-          &#8249;
-        </button>
+          <button
+            className="project-to-scroll-btn project-to-left"
+            onClick={scrollLeft}
+            aria-label="Scroll Left"
+          >
+            &#8249;
+          </button>
 
-        <div className="project-to-container" ref={scrollRef}>
-          {projects.map((proj, idx) => (
-            <div className="project-to-card" key={idx}>
-              <img src={proj.img} alt={proj.title} className="project-to-img" />
-              <h2 className="project-to-card-title">{proj.title}</h2>
-              <p className="project-to-desc">{proj.description}</p>
-              <p className="project-to-tech">{proj.technologies}</p>
-              <div className="project-to-btn-container">
-                <button
-                  className="project-to-btn"
-                  onClick={() =>
-                    window.open(proj.github, "_blank", "noopener,noreferrer")
-                  }
-                >
-                  Github
-                </button>
-                <button
-                  className="project-to-btn"
-                  onClick={() =>
-                    window.open(proj.demo, "_blank", "noopener,noreferrer")
-                  }
-                >
-                  Live Demo
-                </button>
+          <div className="project-to-container" ref={scrollRef}>
+            {projects.map((proj, idx) => (
+              <div className="project-to-card" key={idx}>
+                <img
+                  src={proj.img}
+                  alt={proj.title}
+                  className="project-to-img"
+                />
+                <h2 className="project-to-card-title">{proj.title}</h2>
+                <p className="project-to-desc">{proj.description}</p>
+                <p className="project-to-tech">{proj.technologies}</p>
+                <div className="project-to-btn-container">
+                  <button
+                    className="project-to-btn"
+                    onClick={() =>
+                      window.open(proj.github, "_blank", "noopener,noreferrer")
+                    }
+                  >
+                    Github
+                  </button>
+                  <button
+                    className="project-to-btn"
+                    onClick={() =>
+                      window.open(proj.demo, "_blank", "noopener,noreferrer")
+                    }
+                  >
+                    Live Demo
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <button
-          className="project-to-scroll-btn project-to-right"
-          onClick={scrollRight}
-          aria-label="Scroll Right"
-        >
-          &#8250;
-        </button>
+          <button
+            className="project-to-scroll-btn project-to-right"
+            onClick={scrollRight}
+            aria-label="Scroll Right"
+          >
+            &#8250;
+          </button>
+        </div>
       </div>
     </section>
   );

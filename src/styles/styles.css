@@ -371,7 +371,6 @@ article .icon {
 .title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 2rem;
 }
 
 /* PROJECTS SECTION */
@@ -390,6 +389,9 @@ article .icon {
 }
 
 /* Projects container for horizontal scroll */
+.center-div {
+  margin-top: 40px;
+}
 .project-to-container {
   display: flex;
   gap: 2rem;
