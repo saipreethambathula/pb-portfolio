@@ -425,7 +425,7 @@ article .icon {
 .project-to-card {
   flex: 0 0 auto;
   min-width: 300px;
-  max-width: 350px;
+  max-width: 310px;
   height: 420px;
   background: rgb(250, 250, 250);
   border-radius: 1.5rem;
@@ -455,6 +455,7 @@ article .icon {
 
 /* Project description & tech */
 .project-to-desc {
+  width: 100%;
   font-size: 0.95rem;
   margin-bottom: 0.25rem;
 }

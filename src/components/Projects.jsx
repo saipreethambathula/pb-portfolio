@@ -5,10 +5,27 @@ import project3 from "../assets/project-3.png";
 
 const projects = [
   {
-    title: "Project One",
+    title: "Memory Card Game",
     img: project1,
-    description: "Small description about project one",
-    technologies: "React, Tailwind, Node.js",
+    description:
+      "A game where players flip cards to find matching pairs, boosting memory and focus.",
+    technologies: "HTML, CSS, JavaScript",
+    github: "https://github.com/saipreethambathula/memory-game",
+    demo: "https://pb-memory-game.vercel.app/",
+  },
+  {
+    title: "Project Two",
+    img: project2,
+    description: "Small description about project two",
+    technologies: "React, Material UI, Express",
+    github: "https://github.com/",
+    demo: "https://github.com/",
+  },
+  {
+    title: "Project Three",
+    img: project3,
+    description: "Small description about project three",
+    technologies: "React, CSS, Node.js",
     github: "https://github.com/",
     demo: "https://github.com/",
   },
@@ -79,7 +96,7 @@ export default function Projects() {
         </button>
 
         <div className="project-to-container" ref={scrollRef}>
-          {projects.concat(projects).map((proj, idx) => (
+          {projects.map((proj, idx) => (
             <div className="project-to-card" key={idx}>
               <img src={proj.img} alt={proj.title} className="project-to-img" />
               <h2 className="project-to-card-title">{proj.title}</h2>
