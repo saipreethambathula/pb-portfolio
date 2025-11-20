@@ -9,7 +9,7 @@ const projects = [
     img: project2,
     description:
       "Developed a responsive job portal with reusable React components, integrated real-time job data via REST APIs, and optimized UI with Tailwind CSS.",
-    technologies: "React, Material UI, Express",
+    technologies: "React.js, Tailwind CSS, HTML, JavaScript, REST APIs",
     github: "https://github.com/saipreethambathula/jobby-app",
     demo: "https://pb-jobby-app.vercel.app/login",
   },
