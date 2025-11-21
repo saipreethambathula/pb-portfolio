@@ -2,16 +2,28 @@ import React, { useEffect, useRef, useState } from "react";
 import project1 from "../assets/project-1.png";
 import project2 from "../assets/project-2.png";
 import project3 from "../assets/project-3.png";
+import project4 from "../assets/project-4.png";
 
 const projects = [
   {
     title: "Jobby App",
     img: project2,
     description:
-      "Developed a responsive job portal with reusable React components, integrated real-time job data via REST APIs, and optimized UI with Tailwind CSS.",
+      "Built a responsive job portal with React, Vite, reusable components, real-time APIs, and Tailwind CSS.",
     technologies: "React.js, Tailwind CSS, HTML, JavaScript, REST APIs",
     github: "https://github.com/saipreethambathula/jobby-app",
+    isGitLink: true,
     demo: "https://pb-jobby-app.vercel.app/",
+  },
+  {
+    title: "Nxt Watch",
+    img: project4,
+    description:
+      "Built a responsive Nxt Watch Clone using React, reusable components, and REST APIs.",
+    technologies: "React, JavaScript, HTML, CSS, REST APIs",
+    github: "https://github.com/saipreethambathula/jobby-app",
+    isGitLink: false,
+    demo: "https://preetnxtwatch.ccbp.tech/login",
   },
   {
     title: "Memory Card Game",
@@ -20,31 +32,18 @@ const projects = [
       "A game where players flip cards to find matching pairs, boosting memory and focus.",
     technologies: "HTML, CSS, JavaScript",
     github: "https://github.com/saipreethambathula/memory-game",
+    isGitLink: true,
     demo: "https://pb-memory-game.vercel.app/",
   },
   {
-    title: "Project Three",
+    title: "Emoji Game",
     img: project3,
-    description: "Small description about project three",
+    description:
+      "A fun memory game where you must click each emoji once without repeating any.",
     technologies: "React, CSS, Node.js",
-    github: "https://github.com/",
-    demo: "https://github.com/",
-  },
-  {
-    title: "Project Two",
-    img: project2,
-    description: "Small description about project two",
-    technologies: "React, Material UI, Express",
-    github: "https://github.com/",
-    demo: "https://github.com/",
-  },
-  {
-    title: "Project Three",
-    img: project3,
-    description: "Small description about project three",
-    technologies: "React, CSS, Node.js",
-    github: "https://github.com/",
-    demo: "https://github.com/",
+    github: "https://github.com/saipreethambathula/emoji-game",
+    isGitLink: true,
+    demo: "https://emoji-game-jade.vercel.app/",
   },
 ];
 
@@ -108,14 +107,22 @@ export default function Projects() {
                 <p className="project-to-desc">{proj.description}</p>
                 <p className="project-to-tech">{proj.technologies}</p>
                 <div className="project-to-btn-container">
-                  <button
-                    className="project-to-btn"
-                    onClick={() =>
-                      window.open(proj.github, "_blank", "noopener,noreferrer")
-                    }
-                  >
-                    Github
-                  </button>
+                  {/* ⭐ Show GitHub button only when isGitLink is true */}
+                  {proj.isGitLink && (
+                    <button
+                      className="project-to-btn"
+                      onClick={() =>
+                        window.open(
+                          proj.github,
+                          "_blank",
+                          "noopener,noreferrer"
+                        )
+                      }
+                    >
+                      Github
+                    </button>
+                  )}
+
                   <button
                     className="project-to-btn"
                     onClick={() =>
