@@ -56,7 +56,7 @@ A personal portfolio website built with **React.js** to showcase projects, skill
 4. Run the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
