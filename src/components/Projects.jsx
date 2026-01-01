@@ -3,6 +3,7 @@ import project1 from "../assets/project-1.png";
 import project2 from "../assets/project-2.png";
 import project3 from "../assets/project-3.png";
 import project4 from "../assets/project-4.png";
+import project5 from "../assets/project-5.png";
 
 const projects = [
   {
@@ -44,6 +45,16 @@ const projects = [
     github: "https://github.com/saipreethambathula/emoji-game",
     isGitLink: true,
     demo: "https://emoji-game-jade.vercel.app/",
+  },
+  {
+    title: "Lumina Store",
+    img: project3,
+    description:
+      "A fun memory game where you must click each emoji once without repeating any.",
+    technologies: "React, CSS, Node.js",
+    github: "https://github.com/saipreethambathula/emoji-game",
+    isGitLink: true,
+    demo: "https://lumina-store-beryl.vercel.app/",
   },
 ];
 
