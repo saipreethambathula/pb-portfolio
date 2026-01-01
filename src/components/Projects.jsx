@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: "Lumina Store",
-    img: project3,
+    img: project5,
     description:
       "A fun memory game where you must click each emoji once without repeating any.",
     technologies: "React, CSS, Node.js",
