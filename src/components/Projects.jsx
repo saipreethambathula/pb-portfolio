@@ -30,12 +30,13 @@ const projects = [
     title: "Lumina Store",
     img: project5,
     description:
-      "A fun memory game where you must click each emoji once without repeating any.",
-    technologies: "React, CSS, Node.js",
-    github: "https://github.com/saipreethambathula/emoji-game",
+      "Responsive e-commerce web application with API-driven product data.",
+    technologies: "React, Tailwind CSS, REST APIs",
+    github: "https://github.com/saipreethambathula/lumina-store",
     isGitLink: true,
     demo: "https://lumina-store-beryl.vercel.app/",
   },
+
   {
     title: "Memory Card Game",
     img: project1,
