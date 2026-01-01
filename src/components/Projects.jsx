@@ -17,14 +17,24 @@ const projects = [
     demo: "https://pb-jobby-app.vercel.app/",
   },
   {
-    title: "Nxt Watch",
+    title: "Vibe Tube",
     img: project4,
     description:
-      "Built a responsive Nxt Watch Clone using React, reusable components, and REST APIs.",
-    technologies: "React, JavaScript, HTML, CSS, REST APIs",
-    github: "https://github.com/saipreethambathula/jobby-app",
-    isGitLink: false,
-    demo: "https://preetnxtwatch.ccbp.tech/login",
+      "YouTube-like video streaming app built with React Hooks and REST APIs.",
+    technologies: "React (Hooks), JavaScript, HTML, CSS, REST APIs",
+    github: "https://github.com/saipreethambathula/vibe-tube",
+    isGitLink: true,
+    demo: "https://vibe-tube-nine.vercel.app/login",
+  },
+  {
+    title: "Lumina Store",
+    img: project5,
+    description:
+      "A fun memory game where you must click each emoji once without repeating any.",
+    technologies: "React, CSS, Node.js",
+    github: "https://github.com/saipreethambathula/emoji-game",
+    isGitLink: true,
+    demo: "https://lumina-store-beryl.vercel.app/",
   },
   {
     title: "Memory Card Game",
@@ -45,16 +55,6 @@ const projects = [
     github: "https://github.com/saipreethambathula/emoji-game",
     isGitLink: true,
     demo: "https://emoji-game-jade.vercel.app/",
-  },
-  {
-    title: "Lumina Store",
-    img: project5,
-    description:
-      "A fun memory game where you must click each emoji once without repeating any.",
-    technologies: "React, CSS, Node.js",
-    github: "https://github.com/saipreethambathula/emoji-game",
-    isGitLink: true,
-    demo: "https://lumina-store-beryl.vercel.app/",
   },
 ];
 
