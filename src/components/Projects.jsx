@@ -7,14 +7,15 @@ import project5 from "../assets/project-5.png";
 
 const projects = [
   {
-    title: "Jobby App",
+    title: "Jobzy App",
     img: project2,
     description:
-      "Built a responsive job portal with React, Vite, reusable components, real-time APIs, and Tailwind CSS.",
-    technologies: "React.js, Tailwind CSS, HTML, JavaScript, REST APIs",
-    github: "https://github.com/saipreethambathula/jobby-app",
+      "Developed a full-stack job portal featuring separate User and Admin portals. Built with React and Tailwind CSS for responsive UI, Node.js backend, and SQLite database, with reusable components and real-time API integration.",
+    technologies:
+      "React.js, Tailwind CSS, Node.js, SQLite, JavaScript, REST APIs",
+    github: "https://github.com/saipreethambathula/JOBZY-APP",
     isGitLink: true,
-    demo: "https://pb-jobby-app.vercel.app/",
+    demo: "https://jobzy-app.vercel.app/",
   },
   {
     title: "Vibe Tube",
@@ -127,7 +128,7 @@ export default function Projects() {
                         window.open(
                           proj.github,
                           "_blank",
-                          "noopener,noreferrer"
+                          "noopener,noreferrer",
                         )
                       }
                     >
