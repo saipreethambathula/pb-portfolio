@@ -10,7 +10,7 @@ const projects = [
     title: "Jobzy App",
     img: project2,
     description:
-      "Developed a full-stack job portal featuring separate User and Admin portals. Built with React and Tailwind CSS for responsive UI, Node.js backend, and SQLite database, with reusable components and real-time API integration.",
+      "Full-stack job portal with User & Admin portals, built with React, Tailwind CSS, Node.js, and SQLite.",
     technologies:
       "React.js, Tailwind CSS, Node.js, SQLite, JavaScript, REST APIs",
     github: "https://github.com/saipreethambathula/JOBZY-APP",
